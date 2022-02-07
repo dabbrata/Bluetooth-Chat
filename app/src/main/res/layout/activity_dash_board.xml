@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".dashBoard">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="348dp"
+        android:layout_height="234dp"
+        android:background="@drawable/around_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.08">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="127dp"
+            android:layout_height="89dp"
+            android:src="@drawable/bluetooth_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Turn ON/OFF bluetooth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_button_onof"
+            android:drawableRight="@drawable/ic_baseline_power_settings_new_24"
+            android:paddingRight="5dp"
+            android:text="Turn on"
+            android:textSize="11dp"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_btn_off"
+            app:backgroundTint="#EA1010"
+            android:drawableRight="@drawable/ic_baseline_power_settings_new_24"
+            android:paddingRight="5dp"
+            android:textColor="#fff"
+            android:textSize="11dp"
+            android:text="Turn Off"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.869"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.788" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="#ccd7dd"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="48dp"
+        android:layout_height="51dp"
+        android:src="@drawable/ic_baseline_bluetooth_24"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:text="CO CONNECT"
+        android:textColor="#6C7A89"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center"
+        android:text="@string/aboutApp"
+        android:textAlignment="center"
+        android:textColor="#6C7A89"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="323dp"
+        android:layout_height="55dp"
+        app:strokeColor="#6C7A89"
+        app:strokeWidth="1dp"
+        android:text="NEXT"
+        app:backgroundTint="#fff"
+        android:textColor="#6C7A89"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="247dp"
+        android:layout_height="202dp"
+        android:src="@drawable/img_middle_backgrind"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.653" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

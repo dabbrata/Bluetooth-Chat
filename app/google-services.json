@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "79670193426",
+    "project_id": "fir-chat-ddf04",
+    "storage_bucket": "fir-chat-ddf04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79670193426:android:911eca264f50e5e1c657cb",
+        "android_client_info": {
+          "package_name": "com.example.analogbluetoothchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79670193426-ngiasi857mcv1d4mbhvt68699i5o2t3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.analogbluetoothchat",
+            "certificate_hash": "3e31c134e562122e625db19eb3bd022ade58624e"
+          }
+        },
+        {
+          "client_id": "79670193426-i1thtuil45cjsa99m3dcfihtducii9kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSQB8d1Yu7vCgrOaEJY5g772eDN19g44Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79670193426-i1thtuil45cjsa99m3dcfihtducii9kd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

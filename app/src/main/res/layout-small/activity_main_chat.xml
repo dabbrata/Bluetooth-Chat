@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".MainChatActivity">
+
+    <ImageView
+        android:id="@+id/imageViewChat"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_baseline_bluetooth_24"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewChat"
+        android:layout_width="48dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:text="ANALOG CHAT"
+        android:textColor="#6C7A89"
+        android:textSize="5dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/imageViewChat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ListenButtonId"
+        android:layout_width="66dp"
+        android:layout_height="11dp"
+        android:background="@drawable/small_layout_border"
+        android:text="Listen"
+        android:textColor="#6C7A89"
+        android:textSize="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="66dp"
+        android:layout_height="11dp"
+        android:background="@drawable/small_layout_border"
+        android:text="Devices"
+        android:textColor="#6C7A89"
+        android:textSize="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="32dp"
+        android:layout_height="11dp"
+        android:text="Disconnect"
+        android:textColor="#6C7A89"
+        android:textSize="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <TextView
+        android:id="@+id/IncomeingTextId"
+        android:layout_width="173dp"
+        android:layout_height="29dp"
+        android:background="@drawable/small_layout_border"
+        android:hint="Incoming...."
+        android:padding="2dp"
+        android:textColor="#6c7a89"
+        android:textColorHint="#b8bfc7"
+        android:textSize="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:backgroundTint="#6C7A89"
+        android:hint="Text"
+        android:inputType="textPersonName"
+        android:textColor="#6c7a89"
+        android:textColorHint="#b8bfc7"
+        android:textSize="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="141dp"
+        android:layout_height="8dp"
+        android:gravity="center"
+        android:text="ONE-TO-ONE CONVERSATION"
+        android:textColor="#6c7a89"
+        android:textSize="4dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <LinearLayout
+        android:layout_width="102dp"
+        android:layout_height="49dp"
+        android:background="#ccd7dd"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883">
+
+
+        <ListView
+            android:id="@+id/listViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarChatPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="#D2D7D3"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

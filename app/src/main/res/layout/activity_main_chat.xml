@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".MainChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarChatPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="#D2D7D3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewChat"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:src="@drawable/ic_baseline_bluetooth_24"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewChat"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="left"
+        android:text="ANALOG CHAT"
+        android:textColor="#6C7A89"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/imageViewChat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ListenButtonId"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:background="@drawable/listen_background"
+        android:text="Listen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:background="@drawable/listen_background"
+        android:text="Paired  Devices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Disconnect"
+        android:textColor="#6C7A89"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarChatPage"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/IncomeingTextId"
+        android:layout_width="329dp"
+        android:layout_height="144dp"
+        android:background="@drawable/next_button"
+        android:hint="Incoming...."
+        android:padding="10dp"
+        android:textColor="#6c7a89"
+        android:textColorHint="#b8bfc7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="285dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#6C7A89"
+        android:drawableLeft="@drawable/ic_baseline_short_text_24"
+        android:hint="Text"
+        android:inputType="textPersonName"
+        android:paddingLeft="0dp"
+        android:paddingBottom="10dp"
+        android:textColor="#6c7a89"
+        android:textColorHint="#b8bfc7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="38dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ONE-TO-ONE CONVERSATION"
+        android:textAlignment="center"
+        android:textColor="#6c7a89"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <LinearLayout
+        android:id="@+id/linyerLayoutId"
+        android:layout_width="340dp"
+        android:layout_height="118dp"
+        android:background="#ccd7dd"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.875">
+
+
+        <ListView
+            android:id="@+id/listViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listening for pairing devices and establishing connection"
+        android:textAlignment="center"
+        android:textColor="#6c7a89"
+        android:gravity="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/ListenButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarChatPage"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the paired device for listening"
+        android:textAlignment="center"
+        android:textColor="#6c7a89"
+        android:gravity="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.794" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
